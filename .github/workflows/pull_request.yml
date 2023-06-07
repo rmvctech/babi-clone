@@ -1,0 +1,14 @@
+name: Pull Request
+
+on: [pull_request]
+
+jobs:
+  install:
+    name: Building Server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      -name: Run Server
+        run: docker-compose build docker-compose up -d

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-git pull origin master
+git pull origin main
 docker-compose down
 docker-compose build
 docker-compose up -d
